@@ -28,7 +28,7 @@ $symbol=strtolower($symbol);
 
 
 
-$parsestring = file_get_contents("https://api.binance.com/api/v1/depth?symbol=$symbol_orig&limit=50");
+$parsestring = file_get_contents("https://api.binance.com/api/v1/depth?symbol=$symbol_orig&limit=100");
 $response=array();
 $response=json_decode($parsestring, true);
 
