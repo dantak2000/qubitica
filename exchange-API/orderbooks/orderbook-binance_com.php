@@ -4,10 +4,6 @@ function orderbook_binance_com($exchange,$symbol,$symbol_orig,$marketid,$quotecu
 {
 $orderbook=array();
 
-date_default_timezone_set('Europe/Berlin');
-$date=date("Y-m-d H:i:s");
-
-
 $conn = new mysqli("localhost", "exchus1", "$PWD1", "exchange1");
 if ($conn->connect_errno) {echo"error";
 return "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
