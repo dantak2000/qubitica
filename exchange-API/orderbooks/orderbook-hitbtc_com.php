@@ -27,7 +27,6 @@ return "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli
 $symbol=str_replace("-","_",$symbol);
 $symbol=strtolower($symbol);
 
-
 $parsestring = file_get_contents("https://api.hitbtc.com/api/2/public/orderbook/$symbol_orig");
 $response=array();
 $response=json_decode($parsestring, true);
