@@ -34,7 +34,7 @@ $util = new Util;
 
 $treffer_array=array();
 
-////////////////////pattern
+////////////////////pattern- install new function
 for ($m=0;$m<64;$m++)
 {
 
